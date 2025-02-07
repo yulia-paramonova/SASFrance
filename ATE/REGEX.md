@@ -2,19 +2,20 @@
 ## Codes
 ## Présentation
 ## Ressouces
-[Documentation SAS : SAS Help Center: Tables of Perl Regular Expression (PRX) Metacharacters](https://go.documentation.sas.com/doc/en/pgmsascdc/default/lefunctionsref/p0s9ilagexmjl8n1u7e1t1jfnzlk.htm)
+**Documentation SAS :**
+- [SAS Help Center: Tables of Perl Regular Expression (PRX) Metacharacters](https://go.documentation.sas.com/doc/en/pgmsascdc/default/lefunctionsref/p0s9ilagexmjl8n1u7e1t1jfnzlk.htm)
+- [SAS Perl Regular Expressions Tip Sheet](https://support.sas.com/content/dam/SAS/support/en/products-solutions/base-sas/tip-sheets/regexp-tip-sheet.pdf)
 
-[SAS Perl Regular Expressions Tip Sheet](https://support.sas.com/content/dam/SAS/support/en/products-solutions/base-sas/tip-sheets/regexp-tip-sheet.pdf)
-
-Aide REGEX : 
+**Aide REGEX :**
 - https://regex101.com/
 - https://rubular.com/
 - https://regexper.com/
 
-## Formation SAS
+**Formation SAS**
 - [SAS Programmation 3 : techniques avancées, 12-13 juin 2025, Paris - La Defense](https://learn.sas.com/course/view.php?id=211)
 - Contacter learn@sas.com pour les formations privées (groupes au sein d’une entreprise)
 
+## 
 ## Inscription aux événements SAS
 ### ASK THE EXPERT : 
 - SAS® Viya & l’Open Source, Mardi 18 mars 2025, 16h00 - 16h40, [Webinaire en direct](https://www.sas.com/fr_fr/webinars/sas-viya-open-source.html)
