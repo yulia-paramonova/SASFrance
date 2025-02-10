@@ -1,6 +1,6 @@
 # Comment utiliser les expressions régulières dans SAS ? (11/02/2025)
 ## Codes
-[ATE_REGEX_DEMO_CODE.sas](ATE/ATE_REGEX_DEMO_CODE.sas)
+[ATE_REGEX_DEMO_CODE.sas](./ATE_REGEX_DEMO_CODE.sas)
 
 ## Présentation
 ## Ressouces
