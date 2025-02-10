@@ -5,6 +5,7 @@
 **Documentation SAS :**
 - [SAS Help Center: Tables of Perl Regular Expression (PRX) Metacharacters](https://go.documentation.sas.com/doc/en/pgmsascdc/default/lefunctionsref/p0s9ilagexmjl8n1u7e1t1jfnzlk.htm)
 - [SAS Perl Regular Expressions Tip Sheet](https://support.sas.com/content/dam/SAS/support/en/products-solutions/base-sas/tip-sheets/regexp-tip-sheet.pdf)
+- [SAS Base Programming Reference Sheet](https://www.sas.com/content/dam/SAS/documents/technical/certification/exam-content/base-programming-ref-sheet.pdf)
 
 **Aide REGEX :**
 - https://regex101.com/
