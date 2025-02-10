@@ -1,4 +1,4 @@
-# Comment utiliser les expressions régulières dans SAS ? (Ask the Expert du 11 février 2025)
+# Comment utiliser les expressions régulières dans SAS ? (11/02/2025)
 ## Codes
 ## Présentation
 ## Ressouces
