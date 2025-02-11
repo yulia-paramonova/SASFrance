@@ -3,6 +3,7 @@
 [ATE_REGEX_DEMO_CODE.sas](./ATE_REGEX_DEMO_CODE.sas)
 
 ## Présentation
+[Comment utiliser les expressions régulières dans SAS ?](https://view.highspot.com/viewer/7b37b84a7f81a72770220f578239713d)
 ## Ressouces
 **Documentation SAS :**
 - [SAS Help Center: Tables of Perl Regular Expression (PRX) Metacharacters](https://go.documentation.sas.com/doc/en/pgmsascdc/default/lefunctionsref/p0s9ilagexmjl8n1u7e1t1jfnzlk.htm)
