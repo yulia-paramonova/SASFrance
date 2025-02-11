@@ -1,6 +1,3 @@
-/* regex tests */
-
-
 /* PART 1 : Extraction de 'dudate' (une date commençant par "DU") à partir de 'Libelle operation' */
 
 data tests;
@@ -8,8 +5,7 @@ data tests;
 	format dudate ddmmyy10.;
 
   	re_date = prxparse('/DU\s\d\d\/\d\d/');  /* Définition de l'expression régulière pour le format "DU jj/mm" */
-  	*re_date = prxparse('<DU\s\d\d/\d\d>');  /* Définition de l'expression régulière pour le format "DU jj/mm" */
-	if prxmatch(re_date, 'Libelle operation'n) > 0 then do;  /* Correspondance pour "DU jj/mm" */
+ 	if prxmatch(re_date, 'Libelle operation'n) > 0 then do;  /* Correspondance pour "DU jj/mm" */
 	   dudate = mdy(substr(prxposn(re_date, 0, 'Libelle operation'n), 7, 2),  /* Extrait le mois */
 	                substr(prxposn(re_date, 0, 'Libelle operation'n), 4, 2),  /* Extrait le jour */
 	                year(date));  /* Utilise l'année en cours */
@@ -21,6 +17,7 @@ data tests;
 drop re_date;
 rename dudate='Date réelle'n;
 run;
+proc print data=tests (obs=20) ; run; 
 
 /* PART 2 : Extraction du Type de paiement */
 data tests;
@@ -29,10 +26,11 @@ data tests;
 	Type = scan('Libelle operation'n,1); /* Extrait le premier mot dans 'Libelle operation' */
 	if Type = "PAIEMENT" then Type = "PAIEMENT CB";
 run; 
+proc print data=tests (obs=20) ; run; 
 
 /* PART 3 : Extraction de la ville */
 data tests;
-set tests;
+set tests (keep='Libelle operation'n 'Date'n uniqueID 'Date réelle'n 'Type'n);
    length ville $ 20 ;
 /* Extraction de la 'ville' VERSION 1 */
    re_ville = prxparse('/ A\s\w+\s/');  * Définition de l'expression régulière pour correspondre à " A ville " ;
@@ -40,30 +38,33 @@ if Type in ("PAIEMENT CB", "RETRAIT") and (prxmatch(re_ville, 'Libelle operation
    city = prxposn(re_ville, 0, 'Libelle operation'n);  * Extrait la correspondance entière, y compris 'A ville';
    ville = SCAN(city, 2);  * Extrait le nom de la ville (deuxième mot après "A");
 end;
-/* Extraction de la 'ville' VERSION 2 */
-re_ville2 = prxparse('/\d\d\sA\s(.*?)\s\-/');
-if prxmatch(re_ville2, 'Libelle operation'n) then 
-	ville2 =prxposn(re_ville2, 1, 'Libelle operation'n);
-	ville2=strip(compress(ville2,"1234567890+"));
-/* drop re_ville re_ville2 ; */
-drop re_ville re_ville2 city ville;
-rename ville2=ville;
 run;
+proc print data=tests (obs=20) ; run; 
 
+data tests;
+set tests (keep='Libelle operation'n 'Date'n uniqueID 'Date réelle'n 'Type'n);
+   length ville $ 20 ;
+/* Extraction de la 'ville' VERSION 2 */
+re_ville = prxparse('/\d\d\sA\s(.*?)\s\-/');
+if prxmatch(re_ville, 'Libelle operation'n) then 
+	ville =prxposn(re_ville, 1, 'Libelle operation'n);
+	ville=strip(compress(ville,"1234567890+"));
+drop re_ville; 
+run;
+proc print data=tests (obs=20) ; run; 
 
 /* PART 4 : Extraction du pays */
 data tests;
 set tests;
    length pays $ 20 ;
    re_pays = prxparse('/\((.*?)\)/');  /* Définition de l'expression régulière pour trouver le texte entre parenthèses */
-	if prxmatch(re_pays, 'Libelle operation'n) > 0 then do;  /* Vérifie si 'Libelle operation' contient des parenthèses */
-	   pays = compress(prxposn(re_pays, 0, 'Libelle operation'n), "()");  /* Extrait le texte entre parenthèses et le stocke dans 'pays', en supprimant les parenthèses */
-	end;
+	if prxmatch(re_pays, 'Libelle operation'n) > 0 then  /* Vérifie si 'Libelle operation' contient des parenthèses */
+	pays = prxposn(re_pays, 1, 'Libelle operation'n);   /* Extrait le texte entre parenthèses*/
 	if ville = 'LUXEMBOURG' then pays = 'Luxembourg';
 	else if ville ~= '' then pays = 'France';
 drop re_pays;
 run; 
-
+proc print data=tests (obs=20) ; run; 
 
 /* PART 5 : Nettoie la variable 'Libelle operation' pour supprimer les informations inutiles, en ne conservant que le nom de l'entreprise */
 data tests;
@@ -78,13 +79,13 @@ libelle = prxchange('s/ CARTE\d\d\d\d/ /', -1, libelle);  /* Supprime les inform
 libelle = prxchange('s/\s\-\s/ /', -1, libelle);  /* Supprime les - */
 libelle = strip(libelle);  /* Supprime les espaces en début et fin de chaîne */
 run;
-
+proc print data=tests (obs=20) ; run; 
 
 /* Pour ouvrir la table dans VA */
-/* proc cas; table.dropTable / caslib="casuser" name="ATE_REGEX_DEMO_DATA" quiet=TRUE; quit; */
-/* data casuser.ATE_REGEX_DEMO_DATA(promote=yes); */
-/* set tests; */
-/* run; */
+proc cas; table.dropTable / caslib="casuser" name="ATE_REGEX_DEMO_DATA" quiet=TRUE; quit;
+data casuser.ATE_REGEX_DEMO_DATA(promote=yes);
+set tests;
+run;
 
 
 /* Explanation helper */
