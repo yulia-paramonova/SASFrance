@@ -34,6 +34,6 @@ Mardi 25 mars 2025 de 14h00 à 16h00, [Evénement en direct](https://www.sas.com
 
 ### Viya Expérience : Spécial données textuelles 
 Jeudi 22 mai 2025 de 10h à 12h30, Paris - La Defense ! [S'inscrire à la liste d'attente](mailto:yulia.paramonova@sas.com?subject=Viya%20Experience%2022%20mai%202025%20Waiting%20List)
-
+Un atelier pratique interactif  guidé au cours duquel vous pouvez explorer etmanipuler la plateforme SAS Viya. Uniquement offline
 
 Contact : [Yulia Paramonova](https://www.linkedin.com/in/yulia-paramonova/)
