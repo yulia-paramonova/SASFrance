@@ -14,6 +14,7 @@
 - https://regex101.com/
 - https://rubular.com/
 - https://regexper.com/
+- https://regex.ai/
 
 **Formation SAS**
 - [SAS Programmation 3 : techniques avancées, 12-13 juin 2025, Paris - La Defense](https://learn.sas.com/course/view.php?id=211)
