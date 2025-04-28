@@ -11,7 +11,7 @@ Vous apprendrez également à combiner efficacement les traitements effectués d
 [SQL_PASS_THROUGH_CODE.sas](./SQL_PASS_THROUGH_CODE.sas)
 
 ## Présentation
-[Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ? ]()
+[Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ? ](https://view.highspot.com/viewer/4c157fed590956a8e3842319568e7d23)
 ## Ressouces
 **Documentation SAS :**
 - [SAS Help Center: SQL Procedure Pass-Through Facility](https://go.documentation.sas.com/doc/en/lrcon/9.4/n1kbstf7vw0qcjn1ibfc8c78a9lc.htm)
