@@ -1,14 +1,22 @@
 # Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ? (29/04/2025)
+
+Le SQL pass-through permet d’exécuter le traitement directement dans la base de données, offrant ainsi plusieurs avantages significatifs : amélioration des performances grâce à une réduction des temps de traitement, et diminution des coûts d’exploitation en minimisant les transferts de données.
+Dans ce webinaire gratuit, vous découvrirez comment tirer parti du SQL pass-through avec différents outils et approches:
+- l’étape DATA de SAS,
+- la procédure SQL en syntaxe SAS,
+- la procédure SQL en syntaxe propre à la base de données.
+Vous apprendrez également à combiner efficacement les traitements effectués dans la base de données et ceux réalisés dans SAS, pour optimiser vos traitements en termes de temps et de coûts.
+
 ## Codes
-[DEMO_CODE.sas](./DEMO_CODE.sas)
+[SQL_PASS_THROUGH_CODE.sas](./SQL_PASS_THROUGH_CODE.sas)
 
 ## Présentation
 [Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ? ]()
 ## Ressouces
 **Documentation SAS :**
-- [SAS Help Center: ]()
-- [SAS  Tip Sheet]()
-- [SAS ]()
+- [SAS Help Center: SQL Procedure Pass-Through Facility](https://go.documentation.sas.com/doc/en/lrcon/9.4/n1kbstf7vw0qcjn1ibfc8c78a9lc.htm)
+- [SQL Processing with SAS® Tip Sheet](https://support.sas.com/content/dam/SAS/support/en/books/sas-certified-professional-prep-guide-advanced/professional-prep-guide-tip-sheets.pdf)
+- [SAS Help Center: FedSQL Implicit Pass-Through Facility](https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/fedsqlref/n0pfc9yk3gguj0n1xa57yscnwi3s.htm)
 
 **Formation SAS**
 - [Cours : Utilisation du SQL dans une session SAS, Paris - La Defense](https://learn.sas.com/course/view.php?id=208)  
@@ -30,7 +38,7 @@ Mardi 17 juin 2025 de 16h30 à 17h30, [RDV en presentiel à SAS Innovate](https:
 Mardi 25 mars 2025 de 14h00 à 16h00, [Voir le replay](https://www.sas.com/fr_fr/events/hello-data.html)
 
 ### Viya Expérience : Spécial données textuelles 
-Jeudi 22 mai 2025 de 10h à 12h30, Paris - La Defense ! [S'inscrire à la liste d'attente](mailto:yulia.paramonova@sas.com?subject=Viya%20Experience%2022%20mai%202025%20Waiting%20List)
+Jeudi 22 mai 2025 de 10h à 12h30, Paris - La Defense ! [S'inscrire à la liste d'attente](mailto:yulia.paramonova@sas.com?subject=Viya%20Experience%2022%20mai%202025%20Waiting%20List)  
 Un atelier pratique interactif  guidé au cours duquel vous pouvez explorer et manipuler la plateforme SAS Viya. Uniquement offline.
 
 ## Contact
