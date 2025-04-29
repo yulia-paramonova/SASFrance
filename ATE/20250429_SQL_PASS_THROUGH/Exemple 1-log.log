@@ -1,0 +1,174 @@
+1    /* region: Generated preamble */
+2    /* Make sure the current directory is writable */
+3    data _null_;
+4        length rc 4;
+5        %let tworkloc="%sysfunc(getoption(work))";
+6        rc=dlgcdir(&tworkloc);
+7    run;
+NOTE: The current working directory is now 
+      "/opt/sas/viya/config/var/tmp/compsrv/default/dc0baa93-8383-4c0c-900e-b05d12702e99/SAS_work1272000001DB_sas-compute-server-2a0
+      8346d-f3b6-4a16-bfee-9589ad755ff4-102".
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+8    
+9    /* Setup options */
+10   title;
+11   footnote;
+12   options validvarname=any;
+13   options validmemname=extend;
+14   options dtreset date number;
+15   options device=png;
+16   
+17   /* Setup macro variables */
+18   %let syscc=0;
+19   %let _clientapp = %nrquote(%nrstr(SAS Studio));
+20   %let _clientappabbrev = %nrquote(%nrstr(Studio));
+21   %let _clientappversion=2024.03;
+22   %let _clientversion=;
+23   %let _sasservername=&SYSHOSTNAME;
+24   %let _sashostname=&SYSHOSTNAME;
+25   %let _sasprogramfilehost=&SYSHOSTNAME;
+26   %let _clientuserid = %nrquote(%nrstr(student));
+27   %let _clientusername = %nrquote(%nrstr(Student));
+28   %let clientmachine = %nrquote(%nrstr());
+29   %let _clientmachine = %nrquote(%nrstr());
+30   %let _clientmode = %nrquote(%nrstr(viya));
+31   %let sasworklocation="%sysfunc(getoption(work))/";
+32   filename _cwd &sasworklocation;
+33   data _null_;
+34       call symput('_sasworkingdir',pathname('_cwd'));
+35   run;
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+36   filename _cwd;
+NOTE: Fileref _CWD has been deassigned.
+37   %let _sasprogramfile = %nrquote(%nrstr(sascontent:/files/files/a985d6fc-bbd6-44ca-9bb3-ce83f4f17b9a));
+38   %let _baseurl = %nrquote(%nrstr(https://server.demo.sas.com/SASStudio/));
+39   %let _execenv = %nrquote(%nrstr(SASStudio));
+40   %symdel _dataout_mime_type _dataout_name _dataout_url _dataout_table / nowarn;
+41   %let _sasws_ = %bquote(%sysfunc(getoption(work)));
+42   %let _saswstemp_ = %bquote(%sysfunc(getoption(work)));
+43   
+44   /* Detect SAS/Graph and setup graph options */
+45   data _null_;
+46       length rc $255;
+47       call symput("graphinit","");
+48       call symput("graphterm","");
+49       rc=tslvl('sasxgopt','n');
+50       _error_=0;
+51       if (rc^=' ') then do;
+52           call symput("graphinit","goptions reset=all gsfname=_gsfname;");
+53           call symput("graphterm","goptions noaccessible;");
+54       end;
+55   run;
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+56   data _null_;
+57       length rc 4;
+58       rc=sysprod("PRODNUM002");
+59       if (rc^=1) then do;
+60           call symput("graphinit","");
+61           call symput("graphterm","");
+62       end;
+63   run;
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+64   
+65   /* Setup ODS destinations */
+66   ods _all_ close;
+67   %studio_results_directory;
+68   filename _htmlout "&_results_prefix_..html";
+69   filename _listout "&_results_prefix_..lst";
+70   filename _gsfname temp;
+71   filename _dataout "&_results_prefix_..dat";
+72   ods autonavigate off;
+73   ods graphics on;
+74   ods html5 (id=web) METATEXT='http-equiv="Content-Security-Policy" content="default-src ''none''; style-src ''unsafe-inline'';
+74 ! img-src data: ;"' device=png gpath="&_saswstemp_" path="&_saswstemp_" encoding=utf8 file=_htmlout (title='Results:Exemple
+74 ! 1.sas') style=Illuminate options(bitmap_mode='inline' outline='on' svg_mode='inline' css_prefix=".ods_&SYS_COMPUTE_JOB_ID"
+74 ! body_id="div_&SYS_COMPUTE_JOB_ID" );
+NOTE: Writing HTML5(WEB) Body file: _HTMLOUT
+75   ods listing file=_listout;
+76   &graphinit;
+77   %studio_initialize_custom_output;
+78   /* endregion */
+79   
+80   %let PATH=/home/student/Courses/etdp;
+81   libname sas "&path/data";
+NOTE: Libref SAS was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /home/student/Courses/etdp/data
+82   libname db oracle path="//server.demo.sas.com:1521/ORCL" schema=ETDP
+83   user=student password=XXXXXXXXXXX;
+NOTE: Libref DB was successfully assigned as follows: 
+      Engine:        ORACLE 
+      Physical Name: //server.demo.sas.com:1521/ORCL
+84   options sastrace=',,,d' sastraceloc=saslog nostsuffix;
+85   
+86   /********* EXEMPLE (1) ******/
+87   * ETAPE DATA;
+ 
+ORACLE_1: Prepared: on connection 0
+SELECT * FROM ETDP.CUSTOMERS
+ 
+88   data test0 (where=(country="FR"));
+89   set db.customers;
+90   run;
+ 
+ORACLE_2: Executed: on connection 0
+SELECT statement  ORACLE_1
+ 
+NOTE: There were 89954 observations read from the data set DB.CUSTOMERS.
+NOTE: The data set WORK.TEST0 has 9994 observations and 13 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.32 seconds
+      cpu time            0.37 seconds
+      
+91   
+92   *PROC SQL;
+93   proc sql;
+94   create table test1 as select * from db.customers where country="FR";
+ 
+ORACLE_3: Prepared: on connection 0
+SELECT * FROM ETDP.CUSTOMERS
+ 
+ 
+ORACLE_4: Prepared: on connection 0
+SELECT  "CUSTOMER_ID", "CUSTOMER_TYPE_ID", "CUSTOMER_NAME", "CUSTOMER_ADDRESS", "CITY_NAME", "CUSTOMER_STATE", "POSTAL_CODE", 
+"COUNTRY", "GENDER", "CUSTOMER_AGE", "BIRTH_DATE", "FIRST_PURCHASE_DATE", "LAST_PURCHASE_DATE" FROM ETDP.CUSTOMERS  WHERE  
+("COUNTRY" = 'FR' )
+ 
+ 
+ORACLE_5: Executed: on connection 0
+SELECT statement  ORACLE_4
+ 
+NOTE: Table WORK.TEST1 created, with 9994 rows and 13 columns.
+95   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.10 seconds
+      
+96   
+97   options sastrace=off;
+98   
+99   /* region: Generated postamble */
+100  /* Close ODS destinations */
+101  &graphterm; ;*';*";*/;run;quit;
+102  quit;run;
+103  ods html5 (id=web) close;
+104  ods listing close;
+105  %if %sysfunc(fileref(_gsfname)) lt 0 %then %do;
+106      filename _gsfname clear;
+NOTE: Fileref _GSFNAME has been deassigned.
+107  %end;
+108  %studio_capture_custom_output;
+109  /* endregion */
+110  
