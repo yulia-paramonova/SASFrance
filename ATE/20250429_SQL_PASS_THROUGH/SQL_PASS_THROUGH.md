@@ -10,6 +10,9 @@ Vous apprendrez également à combiner efficacement les traitements effectués d
 ## Codes
 [SQL_PASS_THROUGH_CODE.sas](./SQL_PASS_THROUGH_CODE.sas)
 
+## Logs
+[Exemples.log](./)
+
 ## Présentation
 [Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ? ](https://view.highspot.com/viewer/4c157fed590956a8e3842319568e7d23)
 ## Ressouces
@@ -24,7 +27,9 @@ Prochaines sessions : 30 Juin – 1 Juillet 2025 ; 8-9 Septembre 2025 ; 8-9 Déc
 - [Cours : SAS SQL Case Study](https://learn.sas.com/course/view.php?id=7247)
 - Contacter learn@sas.com pour les formations privées (groupes au sein d’une entreprise)
 
-
+**Autres liens utiles :**  
+- https://www.philihp.com/2012/reusing-a-libnames-database-connection-in-pass-through.html
+- https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/acreldb/n0rn6hhsizv3trn1cl3e0ofosawi.htm (option "CONNECT USING")
 
 ## 
 ## Inscription aux événements SAS
