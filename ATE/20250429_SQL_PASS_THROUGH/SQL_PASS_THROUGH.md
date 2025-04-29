@@ -17,6 +17,7 @@ Vous apprendrez également à combiner efficacement les traitements effectués d
 [Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ? ](https://view.highspot.com/viewer/4c157fed590956a8e3842319568e7d23)
 ## Ressouces
 **Documentation SAS :**
+- [SAS Help Center: Relational DBMS-Specific Reference](https://go.documentation.sas.com/doc/en/pgmsascdc/v_061/acreldb/p1ptiwdmf283agn1izn4f456tkjn.htm)
 - [SAS Help Center: SQL Procedure Pass-Through Facility](https://go.documentation.sas.com/doc/en/lrcon/9.4/n1kbstf7vw0qcjn1ibfc8c78a9lc.htm)
 - [SQL Processing with SAS® Tip Sheet](https://support.sas.com/content/dam/SAS/support/en/books/sas-certified-professional-prep-guide-advanced/professional-prep-guide-tip-sheets.pdf)
 - [SAS Help Center: FedSQL Implicit Pass-Through Facility](https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/fedsqlref/n0pfc9yk3gguj0n1xa57yscnwi3s.htm)
