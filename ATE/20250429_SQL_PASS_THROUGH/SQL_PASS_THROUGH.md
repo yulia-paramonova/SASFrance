@@ -7,6 +7,8 @@ Dans ce webinaire gratuit, vous découvrirez comment tirer parti du SQL pass-thr
 - la procédure SQL en syntaxe propre à la base de données.
 Vous apprendrez également à combiner efficacement les traitements effectués dans la base de données et ceux réalisés dans SAS, pour optimiser vos traitements en termes de temps et de coûts.
 
+[Résumé du webinaire par Nicolas Housset](https://www.nicolas-housset.fr/jai-suivi-le-webinaire-sas-sur-le-sql-pass-through-voici-comment-optimiser-vos-traitements/)
+
 ## Codes
 [SQL_PASS_THROUGH_CODE.sas](./SQL_PASS_THROUGH_CODE.sas)
 
