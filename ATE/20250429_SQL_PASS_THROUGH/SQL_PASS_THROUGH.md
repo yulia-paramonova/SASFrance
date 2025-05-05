@@ -40,7 +40,7 @@ Prochaines sessions : 30 Juin – 1 Juillet 2025 ; 8-9 Septembre 2025 ; 8-9 Déc
 - [Webinaires à la demande](https://www.sas.com/fr_fr/learn/ask-the-expert-webinars.html#webinaires-%C3%A0-la-demande)
 
 ### Communauté SAS Viya France : retour d’expérience client et cas concrets
-Mardi 17 juin 2025 de 16h30 à 17h30, [RDV en presentiel à SAS Innovate](https://www.sas.com/sas/events/innovate-on-tour/25/paris.html) 
+Mardi 17 juin 2025 de 15h30 à 17h00, [RDV en presentiel à SAS Innovate](https://www.sas.com/sas/events/innovate-on-tour/25/paris.html) 
 
 ### Hello Data! 
 Mardi 25 mars 2025 de 14h00 à 16h00, [Voir le replay](https://www.sas.com/fr_fr/events/hello-data.html)
