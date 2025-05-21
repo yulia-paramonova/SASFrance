@@ -1,14 +1,14 @@
 /* Pour charger les données dans une CASlib depuis une librarie SAS */
 
-%macro upload_to_cas(in_lib, in_table, out_lib, out_table);
+%macro upload_to_cas(librairie_source, table_source, librairie_cible, table_cible);
 	cas session1;
 	caslib _all_ assign;
 
-	proc casutil incaslib="&out_lib." outcaslib="&out_lib.";
-		DROPTABLE CASDATA="&out_table." quiet;
-		load data=&in_lib..&in_table. casout="&out_table.";
-		promote casdata="&out_table.";
-		save CASDATA="&out_table." CASOUT="&out_table." replace;
+	proc casutil incaslib="&librairie_cible." outcaslib="&librairie_cible.";
+		DROPTABLE CASDATA="&table_cible." quiet;
+		load data=&librairie_source..&table_source. casout="&table_cible.";
+		promote casdata="&table_cible.";
+		save CASDATA="&table_cible." CASOUT="&table_cible." replace;
 	quit;
 
 	/* cas session1 terminate; */
