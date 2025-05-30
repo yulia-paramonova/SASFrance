@@ -14,4 +14,4 @@
 	cas session_upload_to_cas terminate;
 %mend upload_to_cas;
 
-%upload_to_cas(sashelp, air, casuser, air_test);
+%upload_to_cas(librairie_source=sashelp, table_source=air, librairie_cible=casuser, table_cible=air_test);
