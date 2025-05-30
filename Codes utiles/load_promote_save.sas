@@ -2,7 +2,7 @@
 
 %macro upload_to_cas(librairie_source, table_source, librairie_cible, table_cible);
 	cas session_upload_to_cas;
-	libname casuser cas caslib="&librairie_cible";
+	libname &librairie_cible cas caslib="&librairie_cible";
 
 	proc casutil incaslib="&librairie_cible." outcaslib="&librairie_cible.";
 		DROPTABLE CASDATA="&table_cible." quiet;
