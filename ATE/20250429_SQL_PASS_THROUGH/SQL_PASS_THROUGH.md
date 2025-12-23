@@ -9,6 +9,9 @@ Vous apprendrez également à combiner efficacement les traitements effectués d
 
 [Résumé du webinaire par Nicolas Housset](https://www.nicolas-housset.fr/jai-suivi-le-webinaire-sas-sur-le-sql-pass-through-voici-comment-optimiser-vos-traitements/)
 
+## Replay
+[Webinaire à la demande : Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ?](https://www.sas.com/fr_fr/webinars/comment-ameliorer-temps-traitement-utilisant-fonction-sql.html)
+
 ## Codes
 [SQL_PASS_THROUGH_CODE.sas](./SQL_PASS_THROUGH_CODE.sas)
 
