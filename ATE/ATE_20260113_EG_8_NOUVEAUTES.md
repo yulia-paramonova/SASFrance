@@ -3,7 +3,7 @@
 [Webinaire à la demande : SAS® Enterprise Guide – Nouveautés, Astuces et Intégration avec SAS® Viya®](https://www.sas.com/fr_fr/webinars/sas-enterprise-guide-nouveautes-astuces-integration-sas-viya.html)
 
 ## Présentation
-[SAS® Enterprise Guide – Nouveautés, Astuces et Intégration avec SAS® Viya®](https://view.highspot.com/viewer/7b37b84a7f81a72770220f578239713d)
+[SAS® Enterprise Guide – Nouveautés, Astuces et Intégration avec SAS® Viya®](https://view.highspot.com/viewer/71c87e315da6ea7c2de8563ffa0d2afd)
 
 ## Ressouces
 **Documentation SAS :**
