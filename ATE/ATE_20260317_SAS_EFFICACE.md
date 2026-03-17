@@ -3,7 +3,7 @@
 [Webinaire à la demande : Comment améliorer l'efficacité de vos programmes SAS ?](https://www.sas.com/fr_fr/webinars/comment-ameliorer-l-efficacite-de-vos-programmes-sas.html)
 
 ## Présentation
-[Comment améliorer l'efficacité de vos programmes SAS ?]()
+[Comment améliorer l'efficacité de vos programmes ?](https://view.highspot.com/viewer/ea51e08e76421d56da8797e874ef78c7)
 
 ## Codes
 [Codes utilisés en démo](ATE/ATE_SAS_EFFICACE)
@@ -26,11 +26,11 @@ Pour apprendre plus sur SAS Viya :
 - www.sas.com/france/formation  
 
 Programmation avancée SAS :   
-- [Cours : Improving SAS Program Efficiency]()
-- [Cours : Le langage MACRO : techniques avancées]()  
+- [Cours : Improving SAS Program Efficiency](https://learn.sas.com/course/view.php?id=8637)
+- [Cours : Le langage MACRO : techniques avancées](https://learn.sas.com/course/view.php?id=700)  
 
 Programmation avancée CAS :  
-- [Cours : Accelerating SAS® Code on the SAS® Viya®]()
+- [Cours : Accelerating SAS® Code on the SAS® Viya®](https://learn.sas.com/course/view.php?id=226)
 
 
 
