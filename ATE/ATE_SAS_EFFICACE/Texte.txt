@@ -1,0 +1,36 @@
+Comment SAS Studio vous permet de gagner le temps ?
+
+Bonnes pratiques de base
+
+-Bien nommer les tables et colonnes 
+    Collage spécial
+
+-Organiser la mise en page de son programme
+    Indenter les instructions et séparer les étapes
+    Utiliser le formatage automatique
+    /* region :*/ 
+    /* endregion */
+
+-Documenter son programme
+    ctrl+/ pour commenter (raccourcis)
+    SAS Viya Copilot
+
+-Déclarer les instructions globales en tout début du programme
+    Options système SAS
+    La connexion des bibliothèques (les libnames) 
+    Les imports des données / des macros
+    Déclaration des paramètres, des chemins ….
+    (Exemple project SAS VTA)
+
+-Faire du code SAS et/ou Python/R
+
+-Créer des flux qui combinent les nœuds low code, 
+les requêtes SQL visuelles, le code SAS et le code Python
+
+-Ordonnancer les traitements
+
+-Créer des étapes personnalisées (et profiter des étapes créées par la communauté) 
+
+-Versionning (GIT)
+
+

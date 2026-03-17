@@ -1,4 +1,4 @@
-/* PART 1 : Extraction de 'dudate' (une date commençant par "DU") à partir de 'Libelle operation' */
+/* region : PART 1 : Extraction de 'dudate' (une date commençant par "DU") à partir de 'Libelle operation' */
 
 data tests;
 	set DEPDATA.ATE_REGEX_DEMO_DATA;
@@ -18,8 +18,9 @@ drop re_date;
 rename dudate='Date réelle'n;
 run;
 proc print data=tests (obs=20) ; run; 
+/* endregion */
 
-/* PART 2 : Extraction du Type de paiement */
+/* region : PART 2 : Extraction du Type de paiement */
 data tests;
 	set tests;
    length Type $ 20 ;
@@ -27,8 +28,9 @@ data tests;
 	if Type = "PAIEMENT" then Type = "PAIEMENT CB";
 run; 
 proc print data=tests (obs=20) ; run; 
+/* endregion */
 
-/* PART 3 : Extraction de la ville */
+/* region : PART 3 : Extraction de la ville */
 data tests;
 set tests (keep='Libelle operation'n 'Date'n uniqueID 'Date réelle'n 'Type'n);
    length ville $ 20 ;
@@ -52,8 +54,9 @@ if prxmatch(re_ville, 'Libelle operation'n) then
 drop re_ville; 
 run;
 proc print data=tests (obs=20) ; run; 
+/* endregion */
 
-/* PART 4 : Extraction du pays */
+/* region : PART 4 : Extraction du pays */
 data tests;
 set tests;
    length pays $ 20 ;
@@ -65,8 +68,9 @@ set tests;
 drop re_pays;
 run; 
 proc print data=tests (obs=20) ; run; 
+/* endregion */
 
-/* PART 5 : Nettoie la variable 'Libelle operation' pour supprimer les informations inutiles, en ne conservant que le nom de l'entreprise */
+/* region : PART 5 : Nettoie la variable 'Libelle operation' pour supprimer les informations inutiles, en ne conservant que le nom de l'entreprise */
 data tests;
 set tests;
 length libelle $ 100 ;
@@ -80,15 +84,16 @@ libelle = prxchange('s/\s\-\s/ /', -1, libelle);  /* Supprime les - */
 libelle = strip(libelle);  /* Supprime les espaces en début et fin de chaîne */
 run;
 proc print data=tests (obs=20) ; run; 
+/* endregion */
 
-/* Pour ouvrir la table dans VA */
+/* region : Pour ouvrir la table dans VA */
 proc cas; table.dropTable / caslib="casuser" name="ATE_REGEX_DEMO_DATA" quiet=TRUE; quit;
 data casuser.ATE_REGEX_DEMO_DATA(promote=yes);
 set tests;
 run;
+/* endregion */
 
-
-/* Explanation helper */
+/* region : Explanation helper */
 /* data tests; */
 /* 	set DEPDATA.ATE_REGEX_DEMO_DATA; */
 /* 	format dudate ddmmyy10.; */
@@ -104,3 +109,4 @@ run;
 /* 	prxposn_var_1_ville =prxposn(re_ville2, 1, 'Libelle operation'n); */
 /* 	prxposn_var_2_ville =prxposn(re_ville2, 2, 'Libelle operation'n); */
 /* run; */
+/* endregion */
