@@ -20,7 +20,7 @@ Bonnes pratiques de base
     La connexion des bibliothèques (les libnames) 
     Les imports des données / des macros
     Déclaration des paramètres, des chemins ….
-    (Exemple project SAS VTA)
+    (Exemple project SAS VTA, intro, macros)
 
 -Faire du code SAS et/ou Python/R
 
