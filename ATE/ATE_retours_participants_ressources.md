@@ -10,9 +10,9 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 
 | Type de contenu | Liens |
 |------|----------|
-| **Articles** | [Developpez.com FAQ SAS Langage Macro](https://sas.developpez.com/faq/sas/?page=Langage-Macro)<br>https://communities.sas.com/t5/SAS-Programming/Macro-Language/td-p/212 |
-| **Formations** | SAS Programming 2: Data Manipulation Techniques<br>Advanced SAS Programming Techniques | 
-| **Webinaires** | https://www.sas.com/fr_fr/webinars/macros-sas.html |
+| **Articles** | [Developpez.com FAQ SAS Langage Macro (FR)](https://sas.developpez.com/faq/sas/?page=Langage-Macro)<br>[Documentation SAS® 9.4 Macro Language (EN)](https://go.documentation.sas.com/doc/fr/pgmsascdc/9.4_3.5/mcrolref/titlepage.htm) |
+| **Formations** | [Cours : Programmation SAS II : gestion des données](https://learn.sas.com/course/view.php?id=235)<br>[Cours : Le langage Macro : automatisation et paramétrage des traitements SAS](https://learn.sas.com/course/view.php?id=121) | 
+| **Webinaires** | [How Do I Make a SAS Macro? Ask the Expert (EN)](https://youtu.be/7xp2FaLexNY?si=lYYMjvI5Yg7PZESf) |
 
 
 ## Bonnes pratiques / normes de programmation
