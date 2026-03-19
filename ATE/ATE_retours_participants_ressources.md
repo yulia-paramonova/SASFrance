@@ -15,6 +15,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 - [SAS Studio](#sas-studio)
 - [Open Source : Python & R](#open-source--python--r)
 - [Administration](#administration)
+- [Autres sujets](#autres-sujets)
 
 ## Bonnes pratiques / normes de programmation / efficacité
 *“Les normes de programmations pour être efficace”,“Amélioration de l'efficacité des programmes SAS”, “Optimisation du code”, “Optimisation de code SAS”, “Justement le travail sur de très gros volumes de données (…) et l'optimisation du code.”*
@@ -84,3 +85,35 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | **Articles** | [SAS Communities : SAS timeout (EN)](https://communities.sas.com/t5/Administration-and-Deployment/SAS-timeout/td-p/748668) <br>[Configuring hardware for SAS: what you should know before you install (EN)](https://blogs.sas.com/content/sgf/2014/10/08/configuring-sas-what-to-know-before-you-install/)<br> [How to Maintain Happy SAS® 9 Users (EN)](https://support.sas.com/resources/papers/proceedings15/SAS1480-2015.pdf) |
 | **Formations** | [Cours : Administration de la plateforme SAS Fast Track](https://learn.sas.com/course/view.php?id=514)<br>[Cours : SAS Viya Administration Fast Track](https://learn.sas.com/course/view.php?id=532) |
 
+
+## Autres sujets
+*"les différentes façons de coder les "array", avec bonnes pratiques/mauvaises pratiques"*  
+- [An Introduction to SAS® Arrays - SAS Support Communities(EN)](https://communities.sas.com/t5/SAS-Global-Forum-Proceedings/An-Introduction-to-SAS-Arrays/ta-p/918898)  
+- [SAS Tutorial | How to Restructure Your Data Using Arrays and DO Loops (EN)](https://www.youtube.com/watch?v=KpWSxTrcMgc)
+  
+  
+  
+## 
+# Inscription aux événements SAS
+## ASK THE EXPERT 
+[Webinaires à la demande](https://www.sas.com/fr_fr/learn/ask-the-expert-webinars.html#webinaires-%C3%A0-la-demande)
+
+## SAS INNOVATE PARIS
+L’expérience Data et IA pour les décideurs, les utilisateurs et les partenaires de SAS    
+Mardi 9 juin 2026 - Cinémathèque Française  
+[Inscription](https://www.sas.com/sas/events/innovate-on-tour/26/paris.html)
+
+## VIYA EXPERIENCE
+Un atelier guidé, pratique et interactif au cours duquel vous préparez les données, construisez des modèles analytiques et visualisez les résultats dans la plateforme SAS Viya.  
+3 sujets au choix :
+- Machine learning
+- Données textuelles 
+- Prévisions des séries temporelles  
+  
+Uniquement en présentiel - Paris - La Defense. [S'inscrire à la liste d'attente.](mailto:yulia.paramonova@sas.com?subject=Viya%20Experience%2022%20mai%202025%20Waiting%20List)  
+  
+  
+  
+  
+##  
+Contact : [Yulia Paramonova](https://www.linkedin.com/in/yulia-paramonova/)
