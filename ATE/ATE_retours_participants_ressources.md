@@ -19,8 +19,8 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 *“Les normes de programmations pour être efficace”,“Amélioration de l'efficacité des programmes SAS”, “Optimisation du code”, “Optimisation de code SAS”, “Justement le travail sur de très gros volumes de données (…) et l'optimisation du code.”*
 | Type de contenu | Liens |
 |------|----------|
-| **Articles** | https://communities.sas.com/t5/SAS-Programming/Performance/td-p/226<br>https://documentation.sas.com/doc/fr/pgmsascdc/9.4_3.5/lepg/overview.htm |
-| **Formations** | [Cours : Programmation SAS I : les fondamentaux ](https://learn.sas.com/course/view.php?id=118)<br>[Programmation SAS III : techniques avancées](https://learn.sas.com/course/view.php?id=211)<br>[Improving SAS Program Efficiency](https://learn.sas.com/course/view.php?id=8637)|
+| **Articles** | [Best Practice Programming Techniques for SAS® Users (EN)](https://support.sas.com/resources/papers/proceedings17/0175-2017.pdf) |
+| **Formations** | [Cours : Programmation SAS I : les fondamentaux ](https://learn.sas.com/course/view.php?id=118)<br>[Cours : Programmation SAS III : techniques avancées](https://learn.sas.com/course/view.php?id=211)<br>[Cours : Improving SAS Program Efficiency](https://learn.sas.com/course/view.php?id=8637)|
 | **Webinaires** | [Comment améliorer l'efficacité de vos programmes SAS ?](ATE/ATE_20260317_SAS_EFFICACE.md)<br> |
 
 
@@ -28,7 +28,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 *“Programmation SQL pour utiliser les procédures de façon répétitive”, “Optimisation du code (étapes data versus SQL par exmple)”, “SQL vs Data : tour des avantages et inconvénients”, “différences des accès aux données des SGBD (libname versus vues SAS SQL Passthru) et performances attendues”*
 | Type de contenu | Liens |
 |------|----------|
-| **Articles** | [OPTIMISEZ LES PERFORMANCES DE TRAITEMENT DE VOS DONNEES AVEC SAS/ACCESS® par Nicolas Housset (FR)](https://www.sas.com/offices/europe/france/services/support/articles/US2013-Q4-OPTIMISEZ-PERFORMANCES-TRAITEMENT-DONNEES-SAS-ACCESS.pdf)<br>https://support.sas.com/resources/papers/proceedings/sugi29/269-29.pdf |
+| **Articles** | [OPTIMISEZ LES PERFORMANCES DE TRAITEMENT DE VOS DONNEES AVEC SAS/ACCESS® par Nicolas Housset (FR)](https://www.sas.com/offices/europe/france/services/support/articles/US2013-Q4-OPTIMISEZ-PERFORMANCES-TRAITEMENT-DONNEES-SAS-ACCESS.pdf)|
 | **Formations** | [Cours : Utilisation du SQL dans une session SAS](https://learn.sas.com/course/view.php?id=208#s1=1)<br> [Cours : SAS SQL Case Study](https://learn.sas.com/course/view.php?id=7247)|
 | **Webinaires** | [Comment améliorer vos temps de traitement en utilisant la fonction SQL Pass Through ? (FR)](ATE/20250429_SQL_PASS_THROUGH/SQL_PASS_THROUGH.md)|
 
@@ -47,22 +47,21 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://documentation.sas.com/doc/fr/webeditorgs/5.2/titlepage.htm<br>https://communities.sas.com/t5/SAS-Studio/ct-p/studio |
-| **Formations** | [Cours : Managing and Querying Data Using Flows in SAS Studio]()<br>[SAS Studio Learning Subscription](https://learn.sas.com/totara/program/view.php?id=67) |
-| **Webinaires** | [Les différents concepts de SAS® Studio](https://www.sas.com/fr_fr/webinars/les-differents-concepts-de-sas-studio.html) <br>[Flux et étapes de SAS Studio](https://www.sas.com/fr_fr/webinars/flux-et-etapes-de-sas-studio.html)|
+| **Formations** | [Cours : Managing and Querying Data Using Flows in SAS Studio](https://learn.sas.com/course/view.php?id=7084)<br>[SAS Studio Learning Subscription](https://learn.sas.com/totara/program/view.php?id=67) |
+| **Webinaires** | [Les différents concepts de SAS® Studio](https://www.sas.com/fr_fr/webinars/les-differents-concepts-de-sas-studio.html) <br>[Flux et étapes de SAS Studio](https://www.sas.com/fr_fr/webinars/flux-et-etapes-de-sas-studio.html)<br>[Nouveautés SAS Viya 2025 et Copilotes SAS](https://www.sas.com/fr_fr/webinars/nouveautes-sas-viya-2025.html)|
 
 
-## Reporting et Graphiques SAS 9.4 (PROC SG*, PROC TEMPLATE)
-*“la programmation de graphiques avec SAS 9.4, les proc SG et la proc template”,"Reporting"*
+## Dataviz, Reporting, Graphiques SAS 9.4 (PROC SG*, PROC TEMPLATE)
+*“la programmation de graphiques avec SAS 9.4, les proc SG et la proc template”, "Reporting", “je n'utilise pour l'instant que SAS VA => sujets sur ce thème”*
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | [Developpez.com FAQ SAS Reporting et ODS (FR)](https://sas.developpez.com/faq/sas?page=Reporting-et-ODS)<br>[Getting Started with PROC REPORT(EN)](https://communities.sas.com/t5/Ask-the-Expert/Getting-Started-with-PROC-REPORT/ta-p/415522)|
-| **Formations** | [Cours : Data Visualization Using ODS Graphics](https://learn.sas.com/course/view.php?id=679)|
-| **Webinaires** | https://www.sas.com/fr_fr/webinars/graphique-sas.html |
+| **Formations** | [Cours : Data Visualization Using ODS Graphics (SAS 9)](https://learn.sas.com/course/view.php?id=679)<br>[Cours : SAS Visual Analytics 1 for SAS Viya: Basics](https://learn.sas.com/course/view.php?id=241)<br>[Cours : SAS Visual Analytics 2 for SAS Viya: Advanced](https://learn.sas.com/course/view.php?id=244)|
+| **Webinaires** | [Comment créer un rapport dans SAS® Visual Analytics sur SAS® Viya® ?](https://www.sas.com/fr_fr/webinars/comment-creer-un-rapport-dans-sas-visual-analytics-sur-sas-viya.html) |
 
 
 ## Open Source : Python & R
-*“Comment intégrer du code Python dans SAS 9”, “utilisation du langage python dans SAS”, “Comment lancer du python depuis les divers clients SAS”
-“Cohabitation entre le code SAS et PROC Python”, “Python”, “Comment utiliser R dans SAS par exemple”*
+*“Utilisation du langage python dans SAS”, “Comment lancer du python depuis les divers clients SAS”, “Cohabitation entre le code SAS et PROC Python”, “Python”, “Comment utiliser R dans SAS par exemple”*
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://documentation.sas.com/doc/fr/pgmsascdc/9.4_3.5/pythonproc/titlepage.htm<br>https://developer.sas.com/open-source/python |
@@ -71,10 +70,9 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 
 
 ## Administration
-*“Gestion des temps de déconnexion automatique”*
+*“Gestion des temps de déconnexion automatique”, “Amélioration de l'efficacité des programmes SAS”, “Optimiser le temps d'exécution”*
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | [SAS Communities : SAS timeout (EN)](https://communities.sas.com/t5/Administration-and-Deployment/SAS-timeout/td-p/748668) <br>[Configuring hardware for SAS: what you should know before you install (EN)](https://blogs.sas.com/content/sgf/2014/10/08/configuring-sas-what-to-know-before-you-install/)<br> [How to Maintain Happy SAS® 9 Users (EN)](https://support.sas.com/resources/papers/proceedings15/SAS1480-2015.pdf) |
 | **Formations** | [Cours : Administration de la plateforme SAS Fast Track](https://learn.sas.com/course/view.php?id=514)<br>[Cours : SAS Viya Administration Fast Track](https://learn.sas.com/course/view.php?id=532) |
-| **Webinaires** | https://www.sas.com/fr_fr/webinars/securite-sas.html |
 
