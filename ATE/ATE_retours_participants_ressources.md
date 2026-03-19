@@ -6,6 +6,14 @@ Vos commentaires sont essentiels : ils nous permettent d’identifier les sujets
 Dans ce document, nous avons regroupé les thématiques techniques qui reviennent le plus souvent, ainsi qu’une sélection de ressources pour vous permettre d’approfondir ces sujets à votre rythme.
 
 
+## Optimisation
+
+| Type de contenu | Liens |
+|------|----------|
+| **Articles** | [Configuring hardware for SAS: what you should know before you install (EN)](https://blogs.sas.com/content/sgf/2014/10/08/configuring-sas-what-to-know-before-you-install/)<br> [How to Maintain Happy SAS® 9 Users (EN)](https://support.sas.com/resources/papers/proceedings15/SAS1480-2015.pdf)|
+| **Formations** | []()<br>[]() | 
+| **Webinaires** | []() |
+
 ## Macros
 
 | Type de contenu | Liens |
@@ -20,7 +28,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://communities.sas.com/t5/SAS-Programming/Performance/td-p/226<br>https://documentation.sas.com/doc/fr/pgmsascdc/9.4_3.5/lepg/overview.htm |
-| **Formations** | SAS Programming 1: Essentials<br>SAS Programming 2: Data Manipulation Techniques |
+| **Formations** | [Cours : Programmation SAS I : les fondamentaux ](https://learn.sas.com/course/view.php?id=118)<br>[Cours : Programmation SAS II : gestion des données](https://learn.sas.com/course/view.php?id=235)|
 | **Webinaires** | https://www.sas.com/fr_fr/webinars/comment-ameliorer-l-efficacite-de-vos-programmes-sas.html<br>https://www.sas.com/fr_fr/webinars/10-facons-rendre-execution-code-sas-plus-efficace.html |
 
 
@@ -29,7 +37,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | [OPTIMISEZ LES PERFORMANCES DE TRAITEMENT DE VOS DONNEES AVEC SAS/ACCESS® par Nicolas Housset](https://www.sas.com/offices/europe/france/services/support/articles/US2013-Q4-OPTIMISEZ-PERFORMANCES-TRAITEMENT-DONNEES-SAS-ACCESS.pdf)<br>https://support.sas.com/resources/papers/proceedings/sugi29/269-29.pdf |
-| **Formations** | SAS SQL 1: Essentials<br>Advanced SAS Programming Techniques |
+| **Formations** | [Cours : Utilisation du SQL dans une session SAS](https://learn.sas.com/course/view.php?id=208#s1=1)<br>Advanced SAS Programming Techniques |
 | **Webinaires** | https://www.sas.com/fr_fr/webinars/sql-dans-sas.html |
 
 
@@ -38,7 +46,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://documentation.sas.com/doc/fr/egdoccdc/8.2/egug/titlepage.htm<br>https://communities.sas.com/t5/SAS-Enterprise-Guide/ct-p/enterprise-guide |
-| **Formations** | Getting Started with SAS Enterprise Guide |
+| **Formations** | [Cours : SAS Enterprise Guide : utilisation de l'interface]()<br>[SAS Viya Programming Essentials :]()|
 | **Webinaires** | https://www.sas.com/fr_fr/webinars/sas-enterprise-guide-20-astuces-20-minutes.html |
 
 
@@ -47,7 +55,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://documentation.sas.com/doc/fr/webeditorgs/5.2/titlepage.htm<br>https://communities.sas.com/t5/SAS-Studio/ct-p/studio |
-| **Formations** | Getting Started with SAS Studio<br>SAS Viya Programming Essentials |
+| **Formations** | [Cours : Managing and Querying Data Using Flows in SAS Studio]()<br>[]() |
 | **Webinaires** | https://www.sas.com/fr_fr/webinars/les-differents-concepts-de-sas-studio.html |
 
 
@@ -56,7 +64,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://documentation.sas.com/doc/fr/grstatproc/3.2/titlepage.htm<br>https://documentation.sas.com/doc/fr/pgmsascdc/9.4_3.5/odsug/titlepage.htm |
-| **Formations** | Creating Advanced Reports with SAS ODS |
+| **Formations** | [Cours : Data Visualization Using ODS Graphics]()<br>[]() |
 | **Webinaires** | https://www.sas.com/fr_fr/webinars/graphique-sas.html |
 
 
@@ -65,7 +73,7 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://documentation.sas.com/doc/fr/pgmsascdc/9.4_3.5/pythonproc/titlepage.htm<br>https://developer.sas.com/open-source/python |
-| **Formations** | Integrating Open Source Languages with SAS |
+| **Formations** | [Integrating open source language with SAS]()<br>[Cours : Using Python and R with SAS Viya for Advanced Analytics]() |
 | **Webinaires** | https://www.sas.com/fr_fr/webinars/python-sas.html |
 
 
@@ -74,6 +82,6 @@ Dans ce document, nous avons regroupé les thématiques techniques qui reviennen
 | Type de contenu | Liens |
 |------|----------|
 | **Articles** | https://documentation.sas.com/doc/fr/pgmsascdc/9.4_3.5/secuug/titlepage.htm<br>https://communities.sas.com/t5/Administration-and-Deployment/SAS-timeout/td-p/748668 |
-| **Formations** | SAS Viya Administration: Security & Authentication |
+| **Formations** | [Cours : Administration de la plateforme SAS Fast Track](https://learn.sas.com/course/view.php?id=514)<br>[Cours : SAS Viya Administration Fast Track](https://learn.sas.com/course/view.php?id=532) |
 | **Webinaires** | https://www.sas.com/fr_fr/webinars/securite-sas.html |
 
