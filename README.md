@@ -12,4 +12,4 @@
 
 [Codes et présentation | Ask the expert 17 mars 2026 : Comment améliorer l'efficacité de vos programmes SAS ?](ATE/ATE_20260317_SAS_EFFICACE.md)
 
-[Notebooks | Ask the expert 14 avril 2026 : Boostez vos analyses Python avec la puissance de SAS Viya ](ATE/ATE_20260414)
+[Notebooks | Ask the expert 14 avril 2026 : Boostez vos analyses Python avec la puissance de SAS Viya ](ATE/../ATE_20260414_Boost_Analytics_Python_SAS/ATE_20260414_Boost_Analytics_Python_SAS.md)
